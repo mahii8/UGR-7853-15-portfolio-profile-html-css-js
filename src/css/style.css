@@ -1,0 +1,780 @@
+body {
+    font-family: 'Inria Serif', serif;
+    background-color: #F7E9DA;
+    margin: 0;
+    padding: 0;
+    color: #664343;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1;
+}
+.main-content,
+.about-info,
+.education-details,
+.skills-table,
+.certifications,
+.hobbies,
+.adventures,
+#contact-main {
+    font-family: 'Inria Serif', serif; 
+}
+h1, h2, h3, h4 {
+    font-family: 'Inria Serif', serif; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A47C7C;
+    padding: 15px 40px; 
+    font-family: 'Orelega One', serif;
+    color: white;
+}
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.header .logo:hover {
+    color: #7D0D0D;
+}
+#menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    gap: 20px; 
+    align-items: center; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+.navbar a:hover {
+    color: #7D0D0D;
+}
+
+.navbar a.active {
+    color: #7D0D0D;
+    background-color: #F7E9DA; 
+    font-weight: bold; 
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px 40px; 
+}
+
+.text {
+    max-width: 50%; 
+}
+
+.text h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #664343;
+    font-family: 'Inria Serif', serif;
+}
+
+.text h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #A47C7C; 
+}
+
+.text p { 
+    font-size: 18px;
+    line-height: 1.6;
+    color: #664343;
+}
+.img-box {
+    max-width: 40%; 
+    text-align: right; 
+}
+
+.img-box img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 50px 40px; 
+}
+
+.about-info article {
+    max-width: 60%; 
+    font-family: 'Inria Serif', serif;
+    line-height: 1.8; 
+    color: #664343;
+}
+
+.about-info article h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #A47C7C;
+}
+
+.about-info article p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.about-info article ul {
+    list-style: square; 
+    margin-left: 20px;
+    color: #664343;
+}
+
+.about-info article ul li {
+    margin: 10px 0;
+}
+
+.image-2 {
+    max-width: 35%; 
+    text-align: right; 
+}
+
+.image-2 img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #A47C7C;
+    font-family: 'Orelega One', serif;
+}
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#skills-title,
+#certifications-title {
+    margin-left: -800px; 
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.school {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    margin: 10px auto;
+}
+
+.edu-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #A47C7C;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.school-info {
+    background-color: #fff;
+    border: 2px solid #A47C7C;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.school-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #A47C7C;
+    font-family: 'Orelega One', serif;
+}
+
+.school-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.skills-table {
+    width: 40%; 
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #A47C7C; 
+    margin-left: 80px;
+}
+
+.skills-table thead th {
+    background-color: #A47C7C;
+    color: #1b1818;
+    padding: 10px;
+    font-family: 'Orelega One', serif;
+    border: 2px solid #A47C7C;
+}
+
+.skills-table tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #A47C7C; 
+}
+.certifications {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+}
+
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-left: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    border: 2px solid #A47C7C;
+}
+
+.cert-image {
+    width: 100%;
+    height: 160px; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0;
+    background-color: #F7E9DA;
+}
+
+.cert-info {
+    background-color: #A47C7C; 
+    color: #1c1919;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+}
+
+.cert-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'Orelega One', serif;
+}
+
+.cert-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cert-info p {
+    font-size: 12px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 50px; 
+    color: #A47C7C;
+    font-family: 'Orelega One', serif;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    margin-bottom: 100px; 
+}
+
+.hobbies {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; 
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.hobby-card {
+    background-color: #fff;
+    border: 2px solid #A47C7C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hobby-info {
+    padding: 15px; 
+    text-align: left;
+    color: #272121;
+    background-color: #A47C7C;
+    flex-grow: 1; 
+}
+
+.hobby-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0; 
+    border-bottom: 2px solid #A47C7C;
+}
+
+.hobby-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #211d1a;
+    font-family: 'Orelega One', serif;
+}
+
+.hobby-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #211f1c;
+}
+
+.hobby-info h4 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #1f1c16;
+    font-family: 'Orelega One', serif;
+}
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+.adventures {
+    display: flex; 
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.adventures h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #664343; 
+}
+
+.adventures p {
+    margin-bottom: 20px;
+    text-align: justify; 
+    line-height: 1.8; 
+    color: #333;
+}
+.adventures .text-container {
+    flex: 3; 
+}
+.video-container {
+    flex: 2; 
+}
+
+.video-container video {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.video-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7D0D0D; 
+    text-align: center;
+    font-style: italic; 
+}
+#contact-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem; 
+    padding: 2rem;
+    background-color: #F7E9DA;
+}
+
+.contact-left {
+    flex: 1;
+    position: relative; 
+    max-width: 60%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #664343;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #A47C7C;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    background-color: #664343;
+    color: #F7E9DA;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 2rem;
+    padding-left: 1rem; 
+}
+
+.contact-section h2 {
+    margin-top: 0.2rem;
+    margin-bottom: 0; 
+}
+
+.contact-section p {
+    margin-top: 0; 
+    margin-bottom: 0.2rem; 
+}
+
+.contact-section ul {
+    margin-top: 0; 
+    padding: 0;
+    list-style: none;
+}
+.contact-section {
+    margin-bottom: 0.2rem; 
+}
+
+.contact-right ul li {
+    margin-bottom: 0.3rem;
+}
+
+.contact-right ul li a {
+    text-decoration: none;
+    color: #6d4c4c;
+}
+
+.contact-right ul li a:hover {
+    text-decoration: underline;
+    color: #7D0D0D;
+}
+/* Footer */
+footer {
+    background-color: #664343;
+    color: white;
+    font-family: 'Orelega One', serif;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    height: 30px;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    font-size: 16px;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #7D0D0D;
+}
+#menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+/* Mobile Portrait and Landscape, Tablet Portrait */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #A47C7C;
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        z-index: 1000;
+        border-radius: 5px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+
+    .navbar a:hover {
+        background-color: #7D0D0D;
+        color: #F7E9DA;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .img-box {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .img-box {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .text h1 {
+        font-size: 1.8rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+        margin: 15px 0;
+    }
+}
+@media (max-width: 768px) {
+    .about-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .image-2 {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .about-info article {
+        text-align: justify;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    #contact-main {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-left {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form button {
+        position: static;
+        margin: 15px 0;
+    }
+
+    .contact-right {
+        align-items: center;
+    }
+
+    .contact-right ul {
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .education-details {
+        padding: 20px;
+    }
+
+    .school {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edu-logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .school-info {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .school {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .edu-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .school-info {
+        width: 70%;
+    }
+}
+@media (max-width: 768px) {
+    .hobbies {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hobby-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hobby-image {
+        height: 150px;
+    }
+}
+@media (max-width: 768px) {
+    .adventures {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .video-container {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .video-caption {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
